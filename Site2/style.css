@@ -3,30 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: 'Sriracha', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
+    min-height: 100%;
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
-    min-height: 150px;
 }
 header > h1{
-    font-family: 'Passion One', cursive;
-    font-size: 8em;
+    font-family: var(--font02);
+    font-variant: small-caps; /*Deixa a fonte maiúscula, com a diferença que a primeira letra fica em mais destaque*/
+    font-size: 8vw;
     padding: 50px;
     margin: auto;
 }
 header > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;   
+    font-weight: bold;   
     font-size: 1.1em;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     margin-top: -30px;
 }
-header a{
+a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -34,12 +39,13 @@ header a{
 a:hover{
     text-decoration: underline;
 }
-main p{
-    font-family: 'Sriracha', cursive;
-    font-size: 4em;
-    padding-bottom: 50px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 30px;
-    margin-top: 150px;
+    line-height: 2em;
+    font-family: var(--font03);
+    font-size: 4vw;
 }
 footer{
     background-color: black;
@@ -47,25 +53,18 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.2em;
-    margin-top: 150px;
-    height: 40px;
+    padding: 10px;
 }
-footer > p{
-    padding-top: 10px;
-}
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-.w-image{
+.image{
     background-color: rgba(0, 0, 0, 0.383);
-    box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.509);
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.509);
+    text-shadow: 1px 1px 0px black; 
     color: white;
 }
-.w-image > p{
+.image > p{
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.322);
-    width: 750px;
+    padding: 10px;
 }
 #flower{
     background: black url(imagens/background001.jpg) center center/cover no-repeat fixed;
