@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*O cover serve para que a imagem de fundo consiga se adaptar a diferentes resoluções da tela, mesmo que ela "corte" a um pouco da imagem.*/
+            background-size: cover; (O cover serve para que a imagem de fundo consiga se adaptar a diferentes resoluções da tela, mesmo que ela "corte" a um pouco da imagem.)
+            background-attachment: fixed; (Faz com que a imagem fique estática no fundo, mesmo que o usuário desça a página.)*/
+            
+            /*Shorthand - background
+                color > image > position > repeat > [size - prcisa colocar o / antes pra funcionar.] > attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center/cover no-repeat fixed;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -26,6 +32,21 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia officiis esse labore nemo voluptatibus. Placeat incidunt modi excepturi repellat in esse, provident fugit, adipisci officia illum nisi unde vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas velit sed illo magnam perspiciatis natus! Maxime quis debitis facere autem ipsam reprehenderit consequuntur fugit, natus velit doloremque ad magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores harum cumque magnam doloremque dignissimos quis adipisci illum vel hic voluptatibus saepe consequatur at accusamus pariatur fugiat facere, quaerat, repellendus optio.
         </p>
