@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut cumque blanditiis illum quas vel nihil porro, temporibus veniam cupiditate perferendis obcaecati excepturi nobis accusamus reprehenderit harum labore quos vitae?</p>
+    <!--O sandbox="sandbox" é uma forma de segurança pra evitar possíveis ataques que o site pode receber por conta do iframe
+        Esses valores do sandbox servem para dar algumas permissões ao iframe.
+        o referrerpolicy serve para que o conteúdo do iframe não colete informações do usuário-->
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>Seu navegador não é compatível com isso...</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut cumque blanditiis illum quas vel nihil porro, temporibus veniam cupiditate perferendis obcaecati excepturi nobis accusamus reprehenderit harum labore quos vitae?</p>
+</body>
+</html>
