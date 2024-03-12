@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Só é possível enviar dados com o method get se ele não passar de 3000 bytes(aproximadamente 3000 letras).
+        Não usar o get se for enviar dados confidenciais, como senhas por exemplo, e também se for pra enviar algum arquivo.
+        
+        Usar o post se for enviar dados confidenciais(ideal seria usar o protocolo HTTPS, porém, é algo mais avançado).
+        Usar se não quiser que os dados enviados no formulário não apareçam na URL, se os dados passarem de 3000 bytes e se quiser enviar algum arquivo.-->
+    <form action="cadastro.cs" method="post"> <!--Caso queira desligar o auto complete do input é só escrever "autocomplete = off dentro da tag form"-->
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"> <!--O parâmetro name e id podem ter o mesmo nome. Nesse caso tá diferente apenas para fins didáticos-->
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
